@@ -23,4 +23,9 @@
  */
 export function getTrafficAction(color) {
   // Your code here
+  if(color == "green") {
+
+  }else if(){
+
+  }
 }

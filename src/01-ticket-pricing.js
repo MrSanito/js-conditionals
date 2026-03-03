@@ -24,4 +24,30 @@
  */
 export function getTicketPrice(age, isWeekend) {
   // Your code here
+  if(age<0 || Number.isNaN(age) || typeof isWeekend !== "boolean"){
+    return -1
+  }
+  let totalTicketPrice = 0;
+
+  if(age>=0 && age<=12){
+    totalTicketPrice = 8;
+
+  }
+  if(age>=13 && age<=17){
+    totalTicketPrice = 12;
+
+  }
+  if(age>=18 && age<=59){
+    totalTicketPrice = 15;
+
+  }
+  if(age >=60) {
+    totalTicketPrice= 10;
+  }
+
+  if(isWeekend) {
+    totalTicketPrice = totalTicketPrice +3;
+  }
+  return totalTicketPrice;
+
 }
