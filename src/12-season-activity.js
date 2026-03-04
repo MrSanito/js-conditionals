@@ -32,4 +32,11 @@
  */
 export function getSeasonActivity(month, temperature) {
   // Your code here
-}
+  if(month < 0 || month < 12)  {
+    return null
+  }
+  if([12,1,2].includes(month)) {
+    season =
+  
+  }
+ }
