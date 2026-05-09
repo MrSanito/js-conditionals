@@ -51,3 +51,5 @@ export function getTicketPrice(age, isWeekend) {
   return totalTicketPrice;
 
 }
+
+// Minor update for sync
